@@ -176,6 +176,22 @@ body {
     box-shadow: 2px 2px 1px #c0c0c0c0;
     cursor:pointer;
 }
+#empezar {
+    left: 47%;
+    position: relative;
+    height: 90px;
+    width: 100px;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #ddd;
+    box-shadow: 2px 2px 1px #c0c0c0c0;
+    cursor:pointer;
+    
+}
 
 #menu {
     height: 20px;
