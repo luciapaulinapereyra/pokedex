@@ -155,8 +155,8 @@ body {
 
 #dittoButton {
     /* posicionamiento del botón*/
-    top: 95%;
-    left: 50%;
+    top: 50%;
+    left: 20%;
     position: absolute;
     margin: -20px -50px;
     /*estilo del boton*/
