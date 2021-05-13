@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 13</title>
+    <link rel="shortcut icon" href="https://icon-library.com/images/pokedex-icon/pokedex-icon-21.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- abajo de todo esto van recién los estilos -->
+    <link rel="stylesheet" href="./css/estilosPokedex.css">
+</head>
+
+<body>
+    <h1> TEAM 13 </h1>
+    <!--menu	--------------->
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+    </header>
+    <div class="capa"></div>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="./html/galeria.html">Galeria</a>
+                <a href="./html/nosotras.html">Sobre nosotras</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <!--menu	--------------->
+    <article class="card">
+        <img src="https://wallpaperaccess.com/full/24959.jpg" id="pokedex" alt="pokedex" class="card-header">
+        <div class="card-body">
+            <img class="card-body-img" src="" id="imagen"><img>
+            <h2 class="card-body-title" id="nombre"></h2>
+            <p class="card-body-text" id="habilidades"></p>
+        </div>
+        <div class="card-footer">
+            <div class="card-footer-cadena">
+                <h3>Previous Page</h3>
+                <p id="ant"> <img src="./assets/left-arrow.png"> </p>
+            </div>
+            <div class="card-footer-cadena">
+                <h3>TYPE</h3>
+                <p id="tipo"></p>
+            </div>
+            <div class="card-footer-cadena">
+                <h3>Next Page</h3>
+                <p id="sig"> <img src="./assets/right-arrow.png"> </p>
+            </div>
+        </div>
+
+
+        <video class="desactivado" loop id="video">
+        <source src="./assets/DittoVideo.mp4" type="video/mp4">
+    </video>
+        <button id="dittoButton">Ditto time!</button>
+
+    </article>
+    <div class="elements">
+        <div class="SelectPag">
+            <select id="menu" onchange="listarPokemonDesdeSelect(this)" name="Paginas">
+        </select>
+            <ul id="lista"></ul>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="./js/pokedex.js"></script>
+    <script type="text/javascript">
+        crearMenuPag();
+    </script>
+</body>
+
+</html>
