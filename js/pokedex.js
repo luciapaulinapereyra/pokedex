@@ -7,7 +7,7 @@ var link = {
     next:null,
     previous:null
 };
-
+let carta=document.querySelector(".card");
 let requestData = function (url, process) {
     if (window.fetch) {
         if (!url) throw new Error("URL requerido");
@@ -95,6 +95,8 @@ let showPokemon = function (data){
 }
 
 let showDataPokemon = function(data){
+    let carta=document.querySelector(".card");
+    carta.classList.toggle("show");
     let pH = document.getElementById("habilidades");
     pH.textContent="Abilities: ";
     let hString="";

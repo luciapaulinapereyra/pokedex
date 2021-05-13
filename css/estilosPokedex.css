@@ -84,8 +84,12 @@ body {
     box-shadow: 2px 2px 1px #c0c0c0c0;
     margin-left: auto;
     margin-right: auto;
+    visibility: hidden;
+    
 }
-
+.card.show {
+    visibility: visible;
+}
 .card-header {
     width: 100%;
     display: block;
@@ -155,10 +159,10 @@ body {
 
 #dittoButton {
     /* posicionamiento del botón*/
-    top: 50%;
-    left: 20%;
-    position: absolute;
-    margin: -20px -50px;
+    top: 30px;
+   left:20%;
+    position: fixed;
+    
     /*estilo del boton*/
     height: 50px;
     width: 100px;
